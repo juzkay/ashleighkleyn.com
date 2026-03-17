@@ -12,11 +12,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,700&family=Nunito:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    <div class="page-decor decor-1"></div>
+    <div class="page-decor decor-2"></div>
+    <div class="page-decor decor-3"></div>
+
     <nav class="navigation" aria-label="Primary navigation">
       <div class="nav-links" id="navLinks">
         <a href="#examples" class="nav-link">Examples</a>
@@ -37,8 +41,7 @@
             <p class="hero-eyebrow">Sydney-based creator</p>
             <h1 class="hero-title">Ashleigh Kleyn</h1>
             <p class="hero-subtitle">
-              Authentic lifestyle UGC for brands that want content that feels native to social
-              media.
+              Fun, relatable UGC that feels natural to social media.
             </p>
 
             <div class="social-links">
@@ -87,44 +90,47 @@
 
     <section id="about" class="content-section">
       <div class="container">
-        <div class="section-header">
-          <p class="section-label">About</p>
-          <h2>About me</h2>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-text">
-            <p class="about-lead">
-              Hi, I’m Ashleigh — a Sydney-based UGC creator specialising in authentic lifestyle
-              content for brands across TikTok and paid social.
-            </p>
-
-            <p>
-              My content blends clean visuals, natural storytelling and relatable everyday moments
-              to help brands create content that feels genuine rather than overly scripted. The goal
-              is simple: make brand content feel native to the platform and trustworthy to the
-              viewer.
-            </p>
-
-            <p>
-              With a background in creative work, editing and content creation, I understand how to
-              turn a product into content that is polished, social-first and easy for brands to use
-              across organic and ad campaigns.
-            </p>
-
-            <div class="about-tags">
-              <span>lifestyle</span>
-              <span>tech</span>
-              <span>family content</span>
-              <span>parent content</span>
-              <span>fitness</span>
-              <span>productivity</span>
-              <span>men’s lifestyle</span>
-            </div>
+        <div class="section-card">
+          <div class="section-header">
+            <h2>About me</h2>
           </div>
 
-          <div class="about-photo">
-            <img src="assets/images/About Me Pic.jpg" alt="Ashleigh Kleyn UGC creator" />
+          <div class="about-grid">
+            <div class="about-text">
+              <p class="about-lead">Hi, I'm Ash - mum, special education teacher and creator.</p>
+
+              <p>
+                I love spending quality time with my family, cooking, pilates/gym, being in nature,
+                coffee, music and just having a bit of fun. Most of all I love sharing my life
+                through vlogs, hauls, chit chats and all the rest over on TikTok!
+              </p>
+
+              <p>
+                My content style blends everyday storytelling and authentic moments that feel
+                realistic, relatable and genuine. I love creating content that feels warm, inviting
+                and easy for audiences to connect with.
+              </p>
+
+              <p>
+                From the chaos of mum-life to teacher-life to everyday moments, I bring a unique
+                perspective that aligns with your everyday viewer. My content allows brands to show
+                up in ways that feel realistic, useful and enjoyable to watch allowing viewers to
+                organically engage with products.
+              </p>
+
+              <div class="about-tags">
+                <span>Motherhood</span>
+                <span>Teaching</span>
+                <span>Lifestyle</span>
+                <span>Family</span>
+              </div>
+            </div>
+
+            <div class="about-photo">
+              <div class="about-photo-wrap">
+                <img src="assets/images/About Me Pic.jpg" alt="Ashleigh Kleyn UGC creator" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -134,535 +140,520 @@
 
     <section id="examples" class="content-section alt">
       <div class="container">
-        <div class="section-header">
-          <p class="section-label">Portfolio</p>
-          <h2>Video examples</h2>
-        </div>
-
-        <h3 class="portfolio-subtitle">Products</h3>
-
-        <div class="examples-grid">
-          <div class="example-item">
-            <div class="phone-frame">
-              <div class="phone-screen">
-                <div class="video-card" data-video-card>
-                  <video class="ugc-video" playsinline preload="metadata" data-video>
-                    <source src="assets/Videos/Product 1.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <button class="video-play-button" type="button" aria-label="Play Product 1" data-play>
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
-                    </svg>
-                  </button>
-                  <div class="video-controls">
-                    <input
-                      class="video-progress"
-                      type="range"
-                      min="0"
-                      max="100"
-                      value="0"
-                      step="0.1"
-                      aria-label="Product 1 progress"
-                      data-progress
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <h4 class="example-title">Product 1</h4>
+        <div class="section-card section-card-portfolio">
+          <div class="section-header">
+            <h2>Video examples</h2>
           </div>
 
-          <div class="example-item">
-            <div class="phone-frame">
-              <div class="phone-screen">
-                <div class="video-card" data-video-card>
-                  <video class="ugc-video" playsinline preload="metadata" data-video>
-                    <source src="assets/Videos/Product 2.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <button class="video-play-button" type="button" aria-label="Play Product 2" data-play>
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
-                    </svg>
-                  </button>
-                  <div class="video-controls">
-                    <input
-                      class="video-progress"
-                      type="range"
-                      min="0"
-                      max="100"
-                      value="0"
-                      step="0.1"
-                      aria-label="Product 2 progress"
-                      data-progress
-                    />
+          <h3 class="portfolio-subtitle">Products</h3>
+
+          <div class="examples-grid">
+            <div class="example-item">
+              <div class="phone-frame">
+                <div class="phone-screen">
+                  <div class="video-card" data-video-card>
+                    <video class="ugc-video" playsinline preload="metadata" data-video>
+                      <source src="assets/Videos/Product 1.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <button class="video-play-button" type="button" aria-label="Play Product 1" data-play>
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
+                      </svg>
+                    </button>
+                    <div class="video-controls">
+                      <input
+                        class="video-progress"
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="0"
+                        step="0.1"
+                        aria-label="Product 1 progress"
+                        data-progress
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <h4 class="example-title">Product 2</h4>
+
+            <div class="example-item">
+              <div class="phone-frame">
+                <div class="phone-screen">
+                  <div class="video-card" data-video-card>
+                    <video class="ugc-video" playsinline preload="metadata" data-video>
+                      <source src="assets/Videos/Product 2.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <button class="video-play-button" type="button" aria-label="Play Product 2" data-play>
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
+                      </svg>
+                    </button>
+                    <div class="video-controls">
+                      <input
+                        class="video-progress"
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="0"
+                        step="0.1"
+                        aria-label="Product 2 progress"
+                        data-progress
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="example-item">
+              <div class="phone-frame">
+                <div class="phone-screen">
+                  <div class="video-card" data-video-card>
+                    <video class="ugc-video" playsinline preload="metadata" data-video>
+                      <source src="assets/Videos/Product 3.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <button class="video-play-button" type="button" aria-label="Play Product 3" data-play>
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
+                      </svg>
+                    </button>
+                    <div class="video-controls">
+                      <input
+                        class="video-progress"
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="0"
+                        step="0.1"
+                        aria-label="Product 3 progress"
+                        data-progress
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="example-item">
+              <div class="phone-frame">
+                <div class="phone-screen">
+                  <div class="video-card" data-video-card>
+                    <video class="ugc-video" playsinline preload="metadata" data-video>
+                      <source src="assets/Videos/Product 4.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <button class="video-play-button" type="button" aria-label="Play Product 4" data-play>
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
+                      </svg>
+                    </button>
+                    <div class="video-controls">
+                      <input
+                        class="video-progress"
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="0"
+                        step="0.1"
+                        aria-label="Product 4 progress"
+                        data-progress
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="example-item">
+              <div class="phone-frame">
+                <div class="phone-screen">
+                  <div class="video-card" data-video-card>
+                    <video class="ugc-video" playsinline preload="metadata" data-video>
+                      <source src="assets/Videos/Product 5.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <button class="video-play-button" type="button" aria-label="Play Product 5" data-play>
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
+                      </svg>
+                    </button>
+                    <div class="video-controls">
+                      <input
+                        class="video-progress"
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="0"
+                        step="0.1"
+                        aria-label="Product 5 progress"
+                        data-progress
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="example-item">
+              <div class="phone-frame">
+                <div class="phone-screen">
+                  <div class="video-card" data-video-card>
+                    <video class="ugc-video" playsinline preload="metadata" data-video>
+                      <source src="assets/Videos/Product 6.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <button class="video-play-button" type="button" aria-label="Play Product 6" data-play>
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
+                      </svg>
+                    </button>
+                    <div class="video-controls">
+                      <input
+                        class="video-progress"
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="0"
+                        step="0.1"
+                        aria-label="Product 6 progress"
+                        data-progress
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="example-item">
-            <div class="phone-frame">
-              <div class="phone-screen">
-                <div class="video-card" data-video-card>
-                  <video class="ugc-video" playsinline preload="metadata" data-video>
-                    <source src="assets/Videos/Product 3.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <button class="video-play-button" type="button" aria-label="Play Product 3" data-play>
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
-                    </svg>
-                  </button>
-                  <div class="video-controls">
-                    <input
-                      class="video-progress"
-                      type="range"
-                      min="0"
-                      max="100"
-                      value="0"
-                      step="0.1"
-                      aria-label="Product 3 progress"
-                      data-progress
-                    />
+          <h3 class="portfolio-subtitle">Vlogs</h3>
+
+          <div class="examples-grid">
+            <div class="example-item">
+              <div class="phone-frame">
+                <div class="phone-screen">
+                  <div class="video-card" data-video-card>
+                    <video class="ugc-video" playsinline preload="metadata" data-video>
+                      <source src="assets/Videos/Vlogs 1.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <button class="video-play-button" type="button" aria-label="Play Vlog 1" data-play>
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
+                      </svg>
+                    </button>
+                    <div class="video-controls">
+                      <input
+                        class="video-progress"
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="0"
+                        step="0.1"
+                        aria-label="Vlog 1 progress"
+                        data-progress
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <h4 class="example-title">Product 3</h4>
+
+            <div class="example-item">
+              <div class="phone-frame">
+                <div class="phone-screen">
+                  <div class="video-card" data-video-card>
+                    <video class="ugc-video" playsinline preload="metadata" data-video>
+                      <source src="assets/Videos/Vlogs 2.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <button class="video-play-button" type="button" aria-label="Play Vlog 2" data-play>
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
+                      </svg>
+                    </button>
+                    <div class="video-controls">
+                      <input
+                        class="video-progress"
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="0"
+                        step="0.1"
+                        aria-label="Vlog 2 progress"
+                        data-progress
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="example-item">
+              <div class="phone-frame">
+                <div class="phone-screen">
+                  <div class="video-card" data-video-card>
+                    <video class="ugc-video" playsinline preload="metadata" data-video>
+                      <source src="assets/Videos/Vlogs 3.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <button class="video-play-button" type="button" aria-label="Play Vlog 3" data-play>
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
+                      </svg>
+                    </button>
+                    <div class="video-controls">
+                      <input
+                        class="video-progress"
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="0"
+                        step="0.1"
+                        aria-label="Vlog 3 progress"
+                        data-progress
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="example-item">
+              <div class="phone-frame">
+                <div class="phone-screen">
+                  <div class="video-card" data-video-card>
+                    <video class="ugc-video" playsinline preload="metadata" data-video>
+                      <source src="assets/Videos/Vlogs 4.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <button class="video-play-button" type="button" aria-label="Play Vlog 4" data-play>
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
+                      </svg>
+                    </button>
+                    <div class="video-controls">
+                      <input
+                        class="video-progress"
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="0"
+                        step="0.1"
+                        aria-label="Vlog 4 progress"
+                        data-progress
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="example-item">
-            <div class="phone-frame">
-              <div class="phone-screen">
-                <div class="video-card" data-video-card>
-                  <video class="ugc-video" playsinline preload="metadata" data-video>
-                    <source src="assets/Videos/Product 4.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <button class="video-play-button" type="button" aria-label="Play Product 4" data-play>
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
-                    </svg>
-                  </button>
-                  <div class="video-controls">
-                    <input
-                      class="video-progress"
-                      type="range"
-                      min="0"
-                      max="100"
-                      value="0"
-                      step="0.1"
-                      aria-label="Product 4 progress"
-                      data-progress
-                    />
+          <h3 class="portfolio-subtitle">Hauls</h3>
+
+          <div class="examples-grid">
+            <div class="example-item">
+              <div class="phone-frame">
+                <div class="phone-screen">
+                  <div class="video-card" data-video-card>
+                    <video class="ugc-video" playsinline preload="metadata" data-video>
+                      <source src="assets/Videos/Haul 1.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <button class="video-play-button" type="button" aria-label="Play Haul 1" data-play>
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
+                      </svg>
+                    </button>
+                    <div class="video-controls">
+                      <input
+                        class="video-progress"
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="0"
+                        step="0.1"
+                        aria-label="Haul 1 progress"
+                        data-progress
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <h4 class="example-title">Product 4</h4>
+
+            <div class="example-item">
+              <div class="phone-frame">
+                <div class="phone-screen">
+                  <div class="video-card" data-video-card>
+                    <video class="ugc-video" playsinline preload="metadata" data-video>
+                      <source src="assets/Videos/Haul 2.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <button class="video-play-button" type="button" aria-label="Play Haul 2" data-play>
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
+                      </svg>
+                    </button>
+                    <div class="video-controls">
+                      <input
+                        class="video-progress"
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="0"
+                        step="0.1"
+                        aria-label="Haul 2 progress"
+                        data-progress
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="example-item">
+              <div class="phone-frame">
+                <div class="phone-screen">
+                  <div class="video-card" data-video-card>
+                    <video class="ugc-video" playsinline preload="metadata" data-video>
+                      <source src="assets/Videos/Haul 3.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <button class="video-play-button" type="button" aria-label="Play Haul 3" data-play>
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
+                      </svg>
+                    </button>
+                    <div class="video-controls">
+                      <input
+                        class="video-progress"
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="0"
+                        step="0.1"
+                        aria-label="Haul 3 progress"
+                        data-progress
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="example-item">
-            <div class="phone-frame">
-              <div class="phone-screen">
-                <div class="video-card" data-video-card>
-                  <video class="ugc-video" playsinline preload="metadata" data-video>
-                    <source src="assets/Videos/Product 5.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <button class="video-play-button" type="button" aria-label="Play Product 5" data-play>
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
-                    </svg>
-                  </button>
-                  <div class="video-controls">
-                    <input
-                      class="video-progress"
-                      type="range"
-                      min="0"
-                      max="100"
-                      value="0"
-                      step="0.1"
-                      aria-label="Product 5 progress"
-                      data-progress
-                    />
+          <h3 class="portfolio-subtitle">Teaching Fits</h3>
+
+          <div class="examples-grid">
+            <div class="example-item">
+              <div class="phone-frame">
+                <div class="phone-screen">
+                  <div class="video-card" data-video-card>
+                    <video class="ugc-video" playsinline preload="metadata" data-video>
+                      <source src="assets/Videos/Teaching Outfits 1.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <button
+                      class="video-play-button"
+                      type="button"
+                      aria-label="Play Teaching Outfit 1"
+                      data-play
+                    >
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
+                      </svg>
+                    </button>
+                    <div class="video-controls">
+                      <input
+                        class="video-progress"
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="0"
+                        step="0.1"
+                        aria-label="Teaching Outfit 1 progress"
+                        data-progress
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <h4 class="example-title">Product 5</h4>
-          </div>
 
-          <div class="example-item">
-            <div class="phone-frame">
-              <div class="phone-screen">
-                <div class="video-card" data-video-card>
-                  <video class="ugc-video" playsinline preload="metadata" data-video>
-                    <source src="assets/Videos/Product 6.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <button class="video-play-button" type="button" aria-label="Play Product 6" data-play>
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
-                    </svg>
-                  </button>
-                  <div class="video-controls">
-                    <input
-                      class="video-progress"
-                      type="range"
-                      min="0"
-                      max="100"
-                      value="0"
-                      step="0.1"
-                      aria-label="Product 6 progress"
-                      data-progress
-                    />
+            <div class="example-item">
+              <div class="phone-frame">
+                <div class="phone-screen">
+                  <div class="video-card" data-video-card>
+                    <video class="ugc-video" playsinline preload="metadata" data-video>
+                      <source src="assets/Videos/Teaching Outfits 2.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <button
+                      class="video-play-button"
+                      type="button"
+                      aria-label="Play Teaching Outfit 2"
+                      data-play
+                    >
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
+                      </svg>
+                    </button>
+                    <div class="video-controls">
+                      <input
+                        class="video-progress"
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="0"
+                        step="0.1"
+                        aria-label="Teaching Outfit 2 progress"
+                        data-progress
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <h4 class="example-title">Product 6</h4>
-          </div>
-        </div>
 
-        <h3 class="portfolio-subtitle">Vlogs</h3>
-
-        <div class="examples-grid">
-          <div class="example-item">
-            <div class="phone-frame">
-              <div class="phone-screen">
-                <div class="video-card" data-video-card>
-                  <video class="ugc-video" playsinline preload="metadata" data-video>
-                    <source src="assets/Videos/Vlogs 1.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <button class="video-play-button" type="button" aria-label="Play Vlog 1" data-play>
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
-                    </svg>
-                  </button>
-                  <div class="video-controls">
-                    <input
-                      class="video-progress"
-                      type="range"
-                      min="0"
-                      max="100"
-                      value="0"
-                      step="0.1"
-                      aria-label="Vlog 1 progress"
-                      data-progress
-                    />
+            <div class="example-item">
+              <div class="phone-frame">
+                <div class="phone-screen">
+                  <div class="video-card" data-video-card>
+                    <video class="ugc-video" playsinline preload="metadata" data-video>
+                      <source src="assets/Videos/Teaching Outfits 3.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <button
+                      class="video-play-button"
+                      type="button"
+                      aria-label="Play Teaching Outfit 3"
+                      data-play
+                    >
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
+                      </svg>
+                    </button>
+                    <div class="video-controls">
+                      <input
+                        class="video-progress"
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="0"
+                        step="0.1"
+                        aria-label="Teaching Outfit 3 progress"
+                        data-progress
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <h4 class="example-title">Vlog 1</h4>
-          </div>
-
-          <div class="example-item">
-            <div class="phone-frame">
-              <div class="phone-screen">
-                <div class="video-card" data-video-card>
-                  <video class="ugc-video" playsinline preload="metadata" data-video>
-                    <source src="assets/Videos/Vlogs 2.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <button class="video-play-button" type="button" aria-label="Play Vlog 2" data-play>
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
-                    </svg>
-                  </button>
-                  <div class="video-controls">
-                    <input
-                      class="video-progress"
-                      type="range"
-                      min="0"
-                      max="100"
-                      value="0"
-                      step="0.1"
-                      aria-label="Vlog 2 progress"
-                      data-progress
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <h4 class="example-title">Vlog 2</h4>
-          </div>
-
-          <div class="example-item">
-            <div class="phone-frame">
-              <div class="phone-screen">
-                <div class="video-card" data-video-card>
-                  <video class="ugc-video" playsinline preload="metadata" data-video>
-                    <source src="assets/Videos/Vlogs 3.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <button class="video-play-button" type="button" aria-label="Play Vlog 3" data-play>
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
-                    </svg>
-                  </button>
-                  <div class="video-controls">
-                    <input
-                      class="video-progress"
-                      type="range"
-                      min="0"
-                      max="100"
-                      value="0"
-                      step="0.1"
-                      aria-label="Vlog 3 progress"
-                      data-progress
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <h4 class="example-title">Vlog 3</h4>
-          </div>
-
-          <div class="example-item">
-            <div class="phone-frame">
-              <div class="phone-screen">
-                <div class="video-card" data-video-card>
-                  <video class="ugc-video" playsinline preload="metadata" data-video>
-                    <source src="assets/Videos/Vlogs 4.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <button class="video-play-button" type="button" aria-label="Play Vlog 4" data-play>
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
-                    </svg>
-                  </button>
-                  <div class="video-controls">
-                    <input
-                      class="video-progress"
-                      type="range"
-                      min="0"
-                      max="100"
-                      value="0"
-                      step="0.1"
-                      aria-label="Vlog 4 progress"
-                      data-progress
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <h4 class="example-title">Vlog 4</h4>
-          </div>
-        </div>
-
-        <h3 class="portfolio-subtitle">Hauls</h3>
-
-        <div class="examples-grid">
-          <div class="example-item">
-            <div class="phone-frame">
-              <div class="phone-screen">
-                <div class="video-card" data-video-card>
-                  <video class="ugc-video" playsinline preload="metadata" data-video>
-                    <source src="assets/Videos/Haul 1.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <button class="video-play-button" type="button" aria-label="Play Haul 1" data-play>
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
-                    </svg>
-                  </button>
-                  <div class="video-controls">
-                    <input
-                      class="video-progress"
-                      type="range"
-                      min="0"
-                      max="100"
-                      value="0"
-                      step="0.1"
-                      aria-label="Haul 1 progress"
-                      data-progress
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <h4 class="example-title">Haul 1</h4>
-          </div>
-
-          <div class="example-item">
-            <div class="phone-frame">
-              <div class="phone-screen">
-                <div class="video-card" data-video-card>
-                  <video class="ugc-video" playsinline preload="metadata" data-video>
-                    <source src="assets/Videos/Haul 2.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <button class="video-play-button" type="button" aria-label="Play Haul 2" data-play>
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
-                    </svg>
-                  </button>
-                  <div class="video-controls">
-                    <input
-                      class="video-progress"
-                      type="range"
-                      min="0"
-                      max="100"
-                      value="0"
-                      step="0.1"
-                      aria-label="Haul 2 progress"
-                      data-progress
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <h4 class="example-title">Haul 2</h4>
-          </div>
-
-          <div class="example-item">
-            <div class="phone-frame">
-              <div class="phone-screen">
-                <div class="video-card" data-video-card>
-                  <video class="ugc-video" playsinline preload="metadata" data-video>
-                    <source src="assets/Videos/Haul 3.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <button class="video-play-button" type="button" aria-label="Play Haul 3" data-play>
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
-                    </svg>
-                  </button>
-                  <div class="video-controls">
-                    <input
-                      class="video-progress"
-                      type="range"
-                      min="0"
-                      max="100"
-                      value="0"
-                      step="0.1"
-                      aria-label="Haul 3 progress"
-                      data-progress
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <h4 class="example-title">Haul 3</h4>
-          </div>
-        </div>
-
-        <h3 class="portfolio-subtitle">Teaching Fits</h3>
-
-        <div class="examples-grid">
-          <div class="example-item">
-            <div class="phone-frame">
-              <div class="phone-screen">
-                <div class="video-card" data-video-card>
-                  <video class="ugc-video" playsinline preload="metadata" data-video>
-                    <source src="assets/Videos/Teaching Outfits 1.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <button
-                    class="video-play-button"
-                    type="button"
-                    aria-label="Play Teaching Outfit 1"
-                    data-play
-                  >
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
-                    </svg>
-                  </button>
-                  <div class="video-controls">
-                    <input
-                      class="video-progress"
-                      type="range"
-                      min="0"
-                      max="100"
-                      value="0"
-                      step="0.1"
-                      aria-label="Teaching Outfit 1 progress"
-                      data-progress
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <h4 class="example-title">Teaching Outfit 1</h4>
-          </div>
-
-          <div class="example-item">
-            <div class="phone-frame">
-              <div class="phone-screen">
-                <div class="video-card" data-video-card>
-                  <video class="ugc-video" playsinline preload="metadata" data-video>
-                    <source src="assets/Videos/Teaching Outfits 2.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <button
-                    class="video-play-button"
-                    type="button"
-                    aria-label="Play Teaching Outfit 2"
-                    data-play
-                  >
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
-                    </svg>
-                  </button>
-                  <div class="video-controls">
-                    <input
-                      class="video-progress"
-                      type="range"
-                      min="0"
-                      max="100"
-                      value="0"
-                      step="0.1"
-                      aria-label="Teaching Outfit 2 progress"
-                      data-progress
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <h4 class="example-title">Teaching Outfit 2</h4>
-          </div>
-
-          <div class="example-item">
-            <div class="phone-frame">
-              <div class="phone-screen">
-                <div class="video-card" data-video-card>
-                  <video class="ugc-video" playsinline preload="metadata" data-video>
-                    <source src="assets/Videos/Teaching Outfits 3.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <button
-                    class="video-play-button"
-                    type="button"
-                    aria-label="Play Teaching Outfit 3"
-                    data-play
-                  >
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M8 5.5v13l10-6.5-10-6.5Z"></path>
-                    </svg>
-                  </button>
-                  <div class="video-controls">
-                    <input
-                      class="video-progress"
-                      type="range"
-                      min="0"
-                      max="100"
-                      value="0"
-                      step="0.1"
-                      aria-label="Teaching Outfit 3 progress"
-                      data-progress
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <h4 class="example-title">Teaching Outfit 3</h4>
           </div>
         </div>
       </div>
@@ -671,37 +662,39 @@
     </section>
 
     <section id="contact" class="content-section contact-simple">
-      <div class="container contact-container">
-        <h2 class="contact-title">Let's work together!</h2>
+      <div class="container">
+        <div class="section-card contact-card">
+          <h2 class="contact-title">Let's work together!</h2>
 
-        <div class="contact-list">
-          <a
-            class="contact-row"
-            href="mailto:ashleighkleyn@gmail.com"
-            aria-label="Email Ashleigh"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true" class="contact-icon">
-              <path
-                d="M3 5.5A2.5 2.5 0 0 1 5.5 3h13A2.5 2.5 0 0 1 21 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 18.5Zm2.2.4V6l6.8 5.2L18.8 6v-.1ZM18.8 8.8l-6.1 4.6a1.2 1.2 0 0 1-1.4 0L5.2 8.8v9a.3.3 0 0 0 .3.3h13a.3.3 0 0 0 .3-.3Z"
-              />
-            </svg>
-            <span class="contact-pill">ashleighkleyn@gmail.com</span>
-          </a>
+          <div class="contact-list">
+            <a
+              class="contact-row"
+              href="mailto:ashleighkleyn@gmail.com"
+              aria-label="Email Ashleigh"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="contact-icon">
+                <path
+                  d="M3 5.5A2.5 2.5 0 0 1 5.5 3h13A2.5 2.5 0 0 1 21 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 18.5Zm2.2.4V6l6.8 5.2L18.8 6v-.1ZM18.8 8.8l-6.1 4.6a1.2 1.2 0 0 1-1.4 0L5.2 8.8v9a.3.3 0 0 0 .3.3h13a.3.3 0 0 0 .3-.3Z"
+                />
+              </svg>
+              <span class="contact-pill">ashleighkleyn@gmail.com</span>
+            </a>
 
-          <a
-            class="contact-row"
-            href="https://www.tiktok.com/@ashleighkleyn"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="TikTok @ashleighkleyn"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true" class="contact-icon">
-              <path
-                d="M14.6 2v11.2a3.4 3.4 0 1 1-2.4-3.2V7.5a5.8 5.8 0 1 0 4.6 5.7V8.4a7.3 7.3 0 0 0 4.2 1.3V7.2a4.8 4.8 0 0 1-3.4-1.4A4.7 4.7 0 0 1 16.1 2Z"
-              />
-            </svg>
-            <span class="contact-pill">@ashleighkleyn</span>
-          </a>
+            <a
+              class="contact-row"
+              href="https://www.tiktok.com/@ashleighkleyn"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TikTok @ashleighkleyn"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="contact-icon">
+                <path
+                  d="M14.6 2v11.2a3.4 3.4 0 1 1-2.4-3.2V7.5a5.8 5.8 0 1 0 4.6 5.7V8.4a7.3 7.3 0 0 0 4.2 1.3V7.2a4.8 4.8 0 0 1-3.4-1.4A4.7 4.7 0 0 1 16.1 2Z"
+                />
+              </svg>
+              <span class="contact-pill">@ashleighkleyn</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -754,9 +747,7 @@
 
           const pauseOtherVideos = (currentVideo) => {
             allVideos.forEach((otherVideo) => {
-              if (otherVideo !== currentVideo) {
-                otherVideo.pause();
-              }
+              if (otherVideo !== currentVideo) otherVideo.pause();
             });
           };
 
@@ -777,7 +768,6 @@
           });
 
           video.addEventListener("click", togglePlayback);
-
           video.addEventListener("play", updatePlayState);
           video.addEventListener("pause", updatePlayState);
 
