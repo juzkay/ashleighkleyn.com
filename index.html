@@ -834,6 +834,48 @@
         const videoCards = document.querySelectorAll("[data-video-card]");
         const allVideos = Array.from(document.querySelectorAll("[data-video]"));
 
+        // Function to generate poster from video's first frame
+        const generateVideoPoster = (video) => {
+          if (video.poster) return; // Skip if poster already set
+
+          const canvas = document.createElement('canvas');
+          const ctx = canvas.getContext('2d');
+
+          // Wait for video dimensions to be available
+          const setDimensionsAndGenerate = () => {
+            if (video.videoWidth && video.videoHeight) {
+              canvas.width = video.videoWidth;
+              canvas.height = video.videoHeight;
+
+              // Set current time to 0 to get first frame
+              video.currentTime = 0;
+
+              video.addEventListener('seeked', function setPoster() {
+                try {
+                  ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+                  const posterDataUrl = canvas.toDataURL('image/jpeg', 0.8);
+                  video.poster = posterDataUrl;
+                } catch (e) {
+                  console.warn('Failed to generate video poster:', e);
+                  // Fallback: create a simple gradient poster
+                  const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+                  gradient.addColorStop(0, '#f7b8d4');
+                  gradient.addColorStop(1, '#cfe6ff');
+                  ctx.fillStyle = gradient;
+                  ctx.fillRect(0, 0, canvas.width, canvas.height);
+                  video.poster = canvas.toDataURL('image/jpeg', 0.8);
+                }
+                video.removeEventListener('seeked', setPoster);
+              }, { once: true });
+            } else {
+              // Retry if dimensions not available yet
+              setTimeout(setDimensionsAndGenerate, 100);
+            }
+          };
+
+          setDimensionsAndGenerate();
+        };
+
         videoCards.forEach((card) => {
           const video = card.querySelector("[data-video]");
           const playButton = card.querySelector("[data-play]");
@@ -879,6 +921,8 @@
 
           video.addEventListener("loadedmetadata", () => {
             progress.value = 0;
+            // Generate poster from first frame
+            generateVideoPoster(video);
           });
 
           video.addEventListener("timeupdate", () => {
