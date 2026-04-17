@@ -834,6 +834,31 @@
         const videoCards = document.querySelectorAll("[data-video-card]");
         const allVideos = Array.from(document.querySelectorAll("[data-video]"));
 
+        const getPosterUrlFromVideo = (video) => {
+          const source = video.querySelector('source');
+          if (!source) return null;
+
+          const src = source.getAttribute('src');
+          if (!src) return null;
+
+          const fileName = src
+            .split('/')
+            .pop()
+            .replace(/\.[^/.]+$/, '')
+            .toLowerCase();
+
+          return `assets/images/${fileName}.jpg`;
+        };
+
+        allVideos.forEach((video) => {
+          if (!video.poster) {
+            const posterUrl = getPosterUrlFromVideo(video);
+            if (posterUrl) {
+              video.setAttribute('poster', posterUrl);
+            }
+          }
+        });
+
         // Function to generate poster from video's first frame
         const generateVideoPoster = (video) => {
           if (video.poster) return; // Skip if poster already set
